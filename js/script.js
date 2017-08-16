@@ -1,6 +1,5 @@
 var k1 = 'z';
 var k2 = 'x';
-var OD = 6;
 var BPM = 120;
 var seconds = 30;
 var start = false;
@@ -11,7 +10,6 @@ function resetvalues()
 {
     k1 = 'z';
     k2 = 'x';
-    OD = 6;
     BPM = 120;
     seconds = 30;
     start = false;
@@ -21,7 +19,6 @@ function resetvalues()
     document.getElementById("key2").value = k2;
     document.getElementById("seconds").value = seconds;
     document.getElementById("BPM").value = BPM;
-    document.getElementById("OD").value = OD;
     updatevalues();
 }
 function begin()
@@ -74,7 +71,6 @@ function updatevalues()
     k2 = document.getElementById("key2").value;
     seconds = document.getElementById("seconds").value;
     BPM = document.getElementById("BPM").value;
-    OD = document.getElementById("OD").value;
     step = 1000 / (BPM / 15);
     stepper = 0 - step;
     changeTempo(BPM);

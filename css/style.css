@@ -38,6 +38,7 @@ a {
     text-shadow: 0 0 0 #444;
 }
 .elements {
+    margin: 5px;
     position: relative;
     font-family: Arial;
     font-size: 20px;
@@ -74,24 +75,14 @@ a {
     height: 30px;
     text-align: center;
 }
-#OD {
-    width: 40px;
-    height: 30px;
-    text-align: center;
-}
 #status {
     position: relative;
     font-size: 28px;
     text-align: left;
     color: white;
     text-shadow: 1px 1px 3px #444;
-    margin: 20px 0px 0px 0px;
+    margin: 20px 0px 20px 0px;
     left: 0px;
-}
-#Result {
-    position: relative;
-    clear: left;
-    margin: 50px 0px 0px 0px;
 }
 #hiterror {
     position: absolute;

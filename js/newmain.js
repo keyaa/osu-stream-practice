@@ -369,9 +369,12 @@ function update(click) {
             Unstable Rate: n/a\
         ");
         } else {
-            $("div#Result").html(" Total Clicks: " + clickTimes.length.toString() + "<br>\
-                Current Speed: " + (Math.round(60000/(Date.now() - clickTimes[clickTimes.length-4])).toFixed(0)) + " BPM<br>\
-                Unstable Rate: " + (Math.round(unstableRate * 100000) / 100000).toFixed(3));
+            $("div#Result1").html(" Total Clicks: " + clickTimes.length.toString());
+            if (clickTimes.length % 4 == 0)
+            {
+                $("div#Result2").html("Current Speed: " + (Math.round(60000/(Date.now() - clickTimes[clickTimes.length-4])).toFixed(0)) + " BPM");
+            }
+            $("div#Result3").html("Unstable Rate: " + (Math.round(unstableRate * 100000) / 100000).toFixed(1));
             if (counterNumber == 0) {
             var chart = $("#chartContainer").CanvasJSChart();
             chart.options.data[runNumber].dataPoints.push({

@@ -39,6 +39,7 @@ function scheduleNote( beatNumber, time ) {
         return; // we're not playing non-8th 16th notes
     if ( (noteResolution==2) && (beatNumber%4))
         return; // we're not playing non-quarter 8th notes
+
     // create an oscillator
     var osc = audioContext.createOscillator();
     osc.connect( audioContext.destination );

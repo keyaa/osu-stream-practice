@@ -32,35 +32,19 @@
         <input type="text" class="inputbutton" id="key1" maxlength="1" value="z" onkeyup="updatevalues(event)"/>
         <input type="text" class="inputbutton" id="key2" maxlength="1" value="x" onkeyup="updatevalues(event)"/> Time (seconds):
         <input type="text" class="inputbutton" id="seconds" maxlength="3" value="30" onkeyup="updatevalues(event)"/> BPM:
-        <input type="text" class="inputbutton" id="BPM" maxlength="3" value="120" onkeyup="updatevalues(event)"/> <a href="https://osu.ppy.sh/help/wiki/Beatmap_Editor/Song_Setup#overall-difficulty">OD</a>:
-        <select class="inputbutton" onClick="updatevalues(event)" id="OD">
-        <option value="0">0</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="4">4</option>
-        <option value="5">5</option>
-        <option value="6" selected="selected">6</option>
-        <option value="7">7</option>
-        <option value="8">8</option>
-        <option value="9">9</option>
-        <option value="10">10</option>
-        </select>
+        <input type="text" class="inputbutton" id="BPM" maxlength="3" value="120" onkeyup="updatevalues(event)"/> 
         <input type="button" class="inputbutton" id="reset" value="Reset" onClick="resetvalues()">
         <br>
         <div id="status"> Press Enter to ready the test.</div>
     </form>
-    <div>
-    <div class="elements" id="Result">
-        Total Clicks: 0<br>
-        Current Speed: 0 BPM<br>
-        Unstable Rate: 0
-    </div>
+    <div class="elements" id="Result1"> Total Clicks: 0</div>
+    <div class="elements" id="Result2"> Current Speed: 0 BPM</div>
+    <div class="elements" id="Result3"> Unstable Rate: 0 </div>
     <div class="elements">
         <img id="hiterror" src=""></img>
     </div>
     </div>
     <div id="chartContainer" class="elements" style="width:650px;height:300px;margin-bottom:15px;margin-top:15px"></div>
-    <p>Original by arctic, rewritten by Ckris, presented by keyaa. Metronome by cwilso.</p>
+    <p style="font-size:18px;text-align:center">Original by <a href="https://github.com/arctic5/osuStreamSpeed.js" target="_blank">arctic</a>, rewritten by <a href="https://github.com/ckrisirkc/osuStreamSpeed.js" target="_blank">Ckris</a>, presented by <a href="https://github.com/keyaa/osu-stream-practice" target="_blank">keyaa</a>. Metronome by <a href="https://github.com/cwilso/metronome" target="_blank">cwilso</a>.</p>
 </body>
 </html>
