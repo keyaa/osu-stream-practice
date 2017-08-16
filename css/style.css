@@ -93,11 +93,6 @@ a {
     clear: left;
     margin: 50px 0px 0px 0px;
 }
-#acc {
-    position: absolute;
-    margin: 0px 0px 0px 525px;
-    bottom: 0px;
-}
 #hiterror {
     position: absolute;
     margin: 0px 0px 10px 450px;
